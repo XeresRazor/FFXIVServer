@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3785E051C7AD23D00717BD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3785E041C7AD23D00717BD0 /* main.swift */; };
+		D3785E0D1C7AD43600717BD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3785E0C1C7AD43600717BD0 /* main.swift */; };
+		D3785E0F1C7AD44B00717BD0 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3785E0E1C7AD44B00717BD0 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		D3785E011C7AD23D00717BD0 /* FFXIVServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FFXIVServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3785E041C7AD23D00717BD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3785E0C1C7AD43600717BD0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3785E0E1C7AD44B00717BD0 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,38 @@
 		D3785E031C7AD23D00717BD0 /* FFXIVServer */ = {
 			isa = PBXGroup;
 			children = (
-				D3785E041C7AD23D00717BD0 /* main.swift */,
+				D3785E0B1C7AD43600717BD0 /* Sources */,
+				D3785E0E1C7AD44B00717BD0 /* Package.swift */,
 			);
 			path = FFXIVServer;
 			sourceTree = "<group>";
 		};
+		D3785E0B1C7AD43600717BD0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3785E0C1C7AD43600717BD0 /* main.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D3785E101C7AD58400717BD0 /* FFXIVServerBuild */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = D3785E111C7AD58400717BD0 /* Build configuration list for PBXLegacyTarget "FFXIVServerBuild" */;
+			buildPhases = (
+			);
+			buildToolPath = "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swift-build";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = FFXIVServerBuild;
+			passBuildSettingsInEnvironment = 1;
+			productName = FFXIVServerBuild;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		D3785E001C7AD23D00717BD0 /* FFXIVServer */ = {
@@ -95,6 +123,9 @@
 					D3785E001C7AD23D00717BD0 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					D3785E101C7AD58400717BD0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = D3785DFC1C7AD23D00717BD0 /* Build configuration list for PBXProject "FFXIVServer" */;
@@ -110,6 +141,7 @@
 			projectRoot = "";
 			targets = (
 				D3785E001C7AD23D00717BD0 /* FFXIVServer */,
+				D3785E101C7AD58400717BD0 /* FFXIVServerBuild */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3785E051C7AD23D00717BD0 /* main.swift in Sources */,
+				D3785E0F1C7AD44B00717BD0 /* Package.swift in Sources */,
+				D3785E0D1C7AD43600717BD0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +253,29 @@
 			};
 			name = Release;
 		};
+		D3785E121C7AD58400717BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3785E131C7AD58400717BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +293,14 @@
 			buildConfigurations = (
 				D3785E091C7AD23D00717BD0 /* Debug */,
 				D3785E0A1C7AD23D00717BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3785E111C7AD58400717BD0 /* Build configuration list for PBXLegacyTarget "FFXIVServerBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3785E121C7AD58400717BD0 /* Debug */,
+				D3785E131C7AD58400717BD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

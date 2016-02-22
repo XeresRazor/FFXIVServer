@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FFXIVServerBuild.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D3785E001C7AD23D00717BD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3785E101C7AD58400717BD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
