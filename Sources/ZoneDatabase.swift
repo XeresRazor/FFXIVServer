@@ -9,6 +9,20 @@
 import Foundation
 import SMGOLFramework
 
+// Convenience functions
+func parseFloat(valueString: String) -> Float32 {
+    guard let result = Float32(valueString) else { return 0.0 }
+    return result
+}
+
+func parseVector3(vectorString: String) -> ActorVector3 {
+    var components = vectorString.componentsSeparatedByString(", ")
+    if components.count != 3 {
+        return ActorVector3(0.0, 0.0, 0.0)
+    }
+    return (parseFloat(components[0]), parseFloat(components[1]), parseFloat(components[2]))
+}
+
 // MARK: Types
 
 typealias ActorVector3 = (Float32, Float32, Float32)
@@ -100,5 +114,27 @@ class ZoneDatabase {
             result.battleMusicID = UInt32(battleMusicID)
         }
         
+        let actorNodes = zoneNode.selectNodes("Actors/Actor")
+        result.actors.reserveCapacity(actorNodes.count)
+        for actorNode in actorNodes {
+            var actor = ActorDefinition()
+            if let id = GetAttributeIntValue(actorNode, name: "Id") {
+                actor.id = UInt32(id)
+            }
+            if let nameStringID = GetAttributeIntValue(actorNode, name: "NameString") {
+                actor.nameStringID = UInt32(nameStringID)
+            }
+            if let baseModelID = GetAttributeIntValue(actorNode, name: "BaseModel") {
+                actor.baseModelID = UInt32(baseModelID)
+            }
+            if let topModelID = GetAttributeIntValue(actorNode, name: "TopModel") {
+                actor.topModelID = UInt32(topModelID)
+            }
+            if let position = GetAttributeStringValue(actorNode, name: "Position") {
+                actor.pos = parseVector3(position)
+            }
+            result.actors.append(actor)
+        }
+        return result
     }
 }

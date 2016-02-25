@@ -24,7 +24,7 @@ class AppearanceDatabase {
         let appearanceNodes = documentNode.selectNodes("Appearances/Appearance")
         for appearanceNode in appearanceNodes {
             var appearance = AppearanceDefinition()
-            guard let itemID = GetAttributeIntValue(appearanceNode, name:"ItemID") else { return nil }
+            guard let itemID = GetAttributeIntValue(appearanceNode, name:"ItemId") else { return nil }
             for appearanceAttribute in appearanceNode.attributes {
                 guard appearanceAttribute.0 == "ItemId" else { continue }
                 guard let attributeValue = UInt32(appearanceAttribute.1) else { return nil }

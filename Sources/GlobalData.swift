@@ -24,7 +24,7 @@ class GlobalData {
     init() {}
     
     func prepare() {
-//        zoneDatabase.load()
+        zoneDatabase.load()
         loadWeaponAppearanceDatabase()
     }
     
@@ -35,7 +35,7 @@ class GlobalData {
             guard let inputStream = CreateInputStandardStream(weaponAppearanceDatabasePath) else { return }
             weaponAppearanceDatabase = AppearanceDatabase.createFromXML(inputStream)
         } else {
-            // TODO: Add actual loggin
+            // TODO: Add actual logging
             print("File \(weaponAppearanceDatabasePath) doesn't exist. Not loading any weapon appearance data.")
         }
     }
