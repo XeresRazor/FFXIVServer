@@ -31,3 +31,5 @@ if !AppConfig.instance().isConfigAvailable() {
 // Config is loaded, let's fire her up
 let serverAddress = AppConfig.instance().getPreferenceString("ffxivd.gameserver.address")
 print("Starting server at address: \(serverAddress)")
+
+GlobalData.instance().prepare()
