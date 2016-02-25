@@ -10,6 +10,7 @@ import Foundation
 import SMGOLFramework
 
 class GlobalData {
+    private let LogName = "GlobalData"
     // MARK: Singleton Instance methods
     private static let Instance = GlobalData()
     
@@ -35,8 +36,7 @@ class GlobalData {
             guard let inputStream = CreateInputStandardStream(weaponAppearanceDatabasePath) else { return }
             weaponAppearanceDatabase = AppearanceDatabase.createFromXML(inputStream)
         } else {
-            // TODO: Add actual logging
-            print("File \(weaponAppearanceDatabasePath) doesn't exist. Not loading any weapon appearance data.")
+            Log.instance().logMessage(LogName, message: "File \(weaponAppearanceDatabasePath) doesn't exist. Not loading any weapon appearance data.")
         }
     }
 }

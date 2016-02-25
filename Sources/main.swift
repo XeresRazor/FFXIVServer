@@ -25,11 +25,17 @@ import SMGOLFramework
 
 if !AppConfig.instance().isConfigAvailable() {
     let configPath = AppConfig.getBasePath()
-    // TODO: replace this with a proper logging system
-    print("Config file not available. Make sure there is a 'config.xml' file in '\(configPath)'.")
+    Log.instance().logError("Global", message: "Config file not available. Make sure there is a 'config.xml' file in '\(configPath)'.")
 }
 // Config is loaded, let's fire her up
 let serverAddress = AppConfig.instance().getPreferenceString("ffxivd.gameserver.address")
 print("Starting server at address: \(serverAddress)")
 
 GlobalData.instance().prepare()
+
+let lobbyServer = LobbyServer()
+lobbyServer.start()
+
+while true {
+    usleep(10000)
+}

@@ -11,6 +11,8 @@
 		D3A82DBD1C7E844500812C73 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DBC1C7E844500812C73 /* GlobalData.swift */; };
 		D3A82DBF1C7E851500812C73 /* ZoneDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */; };
 		D3A82DC11C7E852C00812C73 /* AppearanceDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */; };
+		D3A82DC31C7F52FD00812C73 /* LobbyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */; };
+		D3A82DC51C7F55EE00812C73 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC41C7F55EE00812C73 /* Log.swift */; };
 		D3D0C60B1C7B4ED0004A1B8F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0C60A1C7B4ED0004A1B8F /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		D3A82DBC1C7E844500812C73 /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneDatabase.swift; sourceTree = "<group>"; };
 		D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceDatabase.swift; sourceTree = "<group>"; };
+		D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyServer.swift; sourceTree = "<group>"; };
+		D3A82DC41C7F55EE00812C73 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D3D0C60A1C7B4ED0004A1B8F /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,8 @@
 				D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */,
 				D3A82DBC1C7E844500812C73 /* GlobalData.swift */,
 				D3785E0C1C7AD43600717BD0 /* main.swift */,
+				D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */,
+				D3A82DC41C7F55EE00812C73 /* Log.swift */,
 				D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */,
 			);
 			path = Sources;
@@ -163,10 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A82DBD1C7E844500812C73 /* GlobalData.swift in Sources */,
+				D3A82DC51C7F55EE00812C73 /* Log.swift in Sources */,
 				D3A82DC11C7E852C00812C73 /* AppearanceDatabase.swift in Sources */,
 				D3D0C60B1C7B4ED0004A1B8F /* AppConfig.swift in Sources */,
 				D3A82DBF1C7E851500812C73 /* ZoneDatabase.swift in Sources */,
 				D3785E0D1C7AD43600717BD0 /* main.swift in Sources */,
+				D3A82DC31C7F52FD00812C73 /* LobbyServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +270,7 @@
 					"$(SRCROOT)/.build/debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
 			};
 			name = Debug;
 		};
@@ -275,7 +283,7 @@
 					"$(SRCROOT)/.build/release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/release";
 			};
 			name = Release;
 		};

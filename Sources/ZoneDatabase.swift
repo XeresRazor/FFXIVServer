@@ -45,6 +45,8 @@ struct ZoneDefinition {
 
 
 class ZoneDatabase {
+    private let LogName = "ZoneDatabase"
+
     private let zoneLocations = [
         ZoneDefLocation(zoneID: 101, name: "lanoscea"),
         ZoneDefLocation(zoneID: 102, name: "coerthas"),
@@ -81,8 +83,7 @@ class ZoneDatabase {
                 guard let zone = loadZoneDefinition(inputStream) else { return }
                 zones[zoneLocation.zoneID] = zone
             } else {
-                // TODO: Proper logging!
-                print("File \(zoneDefPath) doesn't exist. Not loading any data for that zone.")
+                Log.instance().logMessage(LogName, message: "File \(zoneDefPath) doesn't exist. Not loading any data for that zone.")
             }
         }
     }
