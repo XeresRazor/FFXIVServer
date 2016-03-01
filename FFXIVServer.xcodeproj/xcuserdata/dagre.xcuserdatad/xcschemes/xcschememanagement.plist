@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FFXIVServer-SPM.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>FFXIVServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>FFXIVServerBuild.xcscheme</key>
+		<key>SMGOLFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D3785E001C7AD23D00717BD0</key>
+		<key>D33A23361C85F13600664859</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D3785E101C7AD58400717BD0</key>
+		<key>D33A23681C85F18C00664859</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D33A23891C85F1C000664859</key>
 		<dict>
 			<key>primary</key>
 			<true/>

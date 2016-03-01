@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3785E0D1C7AD43600717BD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3785E0C1C7AD43600717BD0 /* main.swift */; };
-		D3A82DBD1C7E844500812C73 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DBC1C7E844500812C73 /* GlobalData.swift */; };
-		D3A82DBF1C7E851500812C73 /* ZoneDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */; };
-		D3A82DC11C7E852C00812C73 /* AppearanceDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */; };
-		D3A82DC31C7F52FD00812C73 /* LobbyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */; };
-		D3A82DC51C7F55EE00812C73 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A82DC41C7F55EE00812C73 /* Log.swift */; };
-		D3D0C60B1C7B4ED0004A1B8F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0C60A1C7B4ED0004A1B8F /* AppConfig.swift */; };
+		D33A236C1C85F18C00664859 /* SMGOLFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D33A236B1C85F18C00664859 /* SMGOLFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33A23711C85F19500664859 /* SMGOLFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33A23691C85F18C00664859 /* SMGOLFramework.framework */; };
+		D33A23721C85F19C00664859 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23561C85F15400664859 /* Config.swift */; };
+		D33A23731C85F19C00664859 /* MemStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23571C85F15400664859 /* MemStream.swift */; };
+		D33A23741C85F19C00664859 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23581C85F15400664859 /* Mutex.swift */; };
+		D33A23751C85F19C00664859 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23591C85F15400664859 /* Socket.swift */; };
+		D33A23761C85F19C00664859 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235A1C85F15400664859 /* SocketUtils.swift */; };
+		D33A23771C85F19C00664859 /* StandardStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235B1C85F15400664859 /* StandardStream.swift */; };
+		D33A23781C85F19C00664859 /* StandardStreamUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235C1C85F15400664859 /* StandardStreamUtils.swift */; };
+		D33A23791C85F19C00664859 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235D1C85F15400664859 /* Stream.swift */; };
+		D33A237A1C85F19C00664859 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235E1C85F15400664859 /* Thread.swift */; };
+		D33A237B1C85F19C00664859 /* XMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A235F1C85F15400664859 /* XMLNode.swift */; };
+		D33A237C1C85F19C00664859 /* XMLNodeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23601C85F15400664859 /* XMLNodeFilter.swift */; };
+		D33A237D1C85F19C00664859 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23611C85F15400664859 /* XMLParser.swift */; };
+		D33A237E1C85F19C00664859 /* XMLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23621C85F15400664859 /* XMLUtils.swift */; };
+		D33A237F1C85F19C00664859 /* XMLWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23631C85F15400664859 /* XMLWriter.swift */; };
+		D33A23801C85F1A100664859 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A234C1C85F15400664859 /* AppConfig.swift */; };
+		D33A23811C85F1A100664859 /* AppearanceDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A234D1C85F15400664859 /* AppearanceDatabase.swift */; };
+		D33A23821C85F1A100664859 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A234E1C85F15400664859 /* GlobalData.swift */; };
+		D33A23831C85F1A100664859 /* LobbyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A234F1C85F15400664859 /* LobbyServer.swift */; };
+		D33A23841C85F1A100664859 /* LobbyServerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23501C85F15400664859 /* LobbyServerPlayer.swift */; };
+		D33A23851C85F1A100664859 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23511C85F15400664859 /* Log.swift */; };
+		D33A23861C85F1A100664859 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23521C85F15400664859 /* main.swift */; };
+		D33A23871C85F1A100664859 /* PacketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23531C85F15400664859 /* PacketUtils.swift */; };
+		D33A23881C85F1A100664859 /* ZoneDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A23541C85F15400664859 /* ZoneDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D3785DFF1C7AD23D00717BD0 /* CopyFiles */ = {
+		D33A23351C85F13600664859 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,19 +47,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D3785E011C7AD23D00717BD0 /* FFXIVServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FFXIVServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3785E0C1C7AD43600717BD0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D3785E0E1C7AD44B00717BD0 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		D3A82DBC1C7E844500812C73 /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
-		D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneDatabase.swift; sourceTree = "<group>"; };
-		D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceDatabase.swift; sourceTree = "<group>"; };
-		D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyServer.swift; sourceTree = "<group>"; };
-		D3A82DC41C7F55EE00812C73 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		D3D0C60A1C7B4ED0004A1B8F /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D33A23371C85F13600664859 /* FFXIVServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FFXIVServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33A23481C85F15400664859 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D33A234C1C85F15400664859 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D33A234D1C85F15400664859 /* AppearanceDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceDatabase.swift; sourceTree = "<group>"; };
+		D33A234E1C85F15400664859 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		D33A234F1C85F15400664859 /* LobbyServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyServer.swift; sourceTree = "<group>"; };
+		D33A23501C85F15400664859 /* LobbyServerPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyServerPlayer.swift; sourceTree = "<group>"; };
+		D33A23511C85F15400664859 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		D33A23521C85F15400664859 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D33A23531C85F15400664859 /* PacketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketUtils.swift; sourceTree = "<group>"; };
+		D33A23541C85F15400664859 /* ZoneDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneDatabase.swift; sourceTree = "<group>"; };
+		D33A23561C85F15400664859 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D33A23571C85F15400664859 /* MemStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemStream.swift; sourceTree = "<group>"; };
+		D33A23581C85F15400664859 /* Mutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
+		D33A23591C85F15400664859 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		D33A235A1C85F15400664859 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		D33A235B1C85F15400664859 /* StandardStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardStream.swift; sourceTree = "<group>"; };
+		D33A235C1C85F15400664859 /* StandardStreamUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardStreamUtils.swift; sourceTree = "<group>"; };
+		D33A235D1C85F15400664859 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		D33A235E1C85F15400664859 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		D33A235F1C85F15400664859 /* XMLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLNode.swift; sourceTree = "<group>"; };
+		D33A23601C85F15400664859 /* XMLNodeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLNodeFilter.swift; sourceTree = "<group>"; };
+		D33A23611C85F15400664859 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		D33A23621C85F15400664859 /* XMLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLUtils.swift; sourceTree = "<group>"; };
+		D33A23631C85F15400664859 /* XMLWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLWriter.swift; sourceTree = "<group>"; };
+		D33A23691C85F18C00664859 /* SMGOLFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMGOLFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33A236B1C85F18C00664859 /* SMGOLFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMGOLFramework.h; sourceTree = "<group>"; };
+		D33A236D1C85F18C00664859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D3785DFE1C7AD23D00717BD0 /* Frameworks */ = {
+		D33A23341C85F13600664859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A23711C85F19500664859 /* SMGOLFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33A23651C85F18C00664859 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,72 +96,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D3785DF81C7AD23D00717BD0 = {
+		D33A232E1C85F13600664859 = {
 			isa = PBXGroup;
 			children = (
-				D3785E031C7AD23D00717BD0 /* FFXIVServer */,
-				D3785E021C7AD23D00717BD0 /* Products */,
+				D33A23411C85F15400664859 /* FFXIVServer */,
+				D33A236A1C85F18C00664859 /* SMGOLFramework */,
+				D33A23381C85F13600664859 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D3785E021C7AD23D00717BD0 /* Products */ = {
+		D33A23381C85F13600664859 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3785E011C7AD23D00717BD0 /* FFXIVServer */,
+				D33A23371C85F13600664859 /* FFXIVServer */,
+				D33A23691C85F18C00664859 /* SMGOLFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3785E031C7AD23D00717BD0 /* FFXIVServer */ = {
+		D33A23411C85F15400664859 /* FFXIVServer */ = {
 			isa = PBXGroup;
 			children = (
-				D3785E0B1C7AD43600717BD0 /* Sources */,
-				D3785E0E1C7AD44B00717BD0 /* Package.swift */,
+				D33A234A1C85F15400664859 /* Sources */,
+				D33A23481C85F15400664859 /* Package.swift */,
+			);
+			name = FFXIVServer;
+			sourceTree = "<group>";
+		};
+		D33A234A1C85F15400664859 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D33A234B1C85F15400664859 /* FFXIVServer */,
+				D33A23551C85F15400664859 /* SMGOLFramework */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D33A234B1C85F15400664859 /* FFXIVServer */ = {
+			isa = PBXGroup;
+			children = (
+				D33A234C1C85F15400664859 /* AppConfig.swift */,
+				D33A234D1C85F15400664859 /* AppearanceDatabase.swift */,
+				D33A234E1C85F15400664859 /* GlobalData.swift */,
+				D33A234F1C85F15400664859 /* LobbyServer.swift */,
+				D33A23501C85F15400664859 /* LobbyServerPlayer.swift */,
+				D33A23511C85F15400664859 /* Log.swift */,
+				D33A23521C85F15400664859 /* main.swift */,
+				D33A23531C85F15400664859 /* PacketUtils.swift */,
+				D33A23541C85F15400664859 /* ZoneDatabase.swift */,
 			);
 			path = FFXIVServer;
 			sourceTree = "<group>";
 		};
-		D3785E0B1C7AD43600717BD0 /* Sources */ = {
+		D33A23551C85F15400664859 /* SMGOLFramework */ = {
 			isa = PBXGroup;
 			children = (
-				D3D0C60A1C7B4ED0004A1B8F /* AppConfig.swift */,
-				D3A82DC01C7E852C00812C73 /* AppearanceDatabase.swift */,
-				D3A82DBC1C7E844500812C73 /* GlobalData.swift */,
-				D3785E0C1C7AD43600717BD0 /* main.swift */,
-				D3A82DC21C7F52FD00812C73 /* LobbyServer.swift */,
-				D3A82DC41C7F55EE00812C73 /* Log.swift */,
-				D3A82DBE1C7E851500812C73 /* ZoneDatabase.swift */,
+				D33A23561C85F15400664859 /* Config.swift */,
+				D33A23571C85F15400664859 /* MemStream.swift */,
+				D33A23581C85F15400664859 /* Mutex.swift */,
+				D33A23591C85F15400664859 /* Socket.swift */,
+				D33A235A1C85F15400664859 /* SocketUtils.swift */,
+				D33A235B1C85F15400664859 /* StandardStream.swift */,
+				D33A235C1C85F15400664859 /* StandardStreamUtils.swift */,
+				D33A235D1C85F15400664859 /* Stream.swift */,
+				D33A235E1C85F15400664859 /* Thread.swift */,
+				D33A235F1C85F15400664859 /* XMLNode.swift */,
+				D33A23601C85F15400664859 /* XMLNodeFilter.swift */,
+				D33A23611C85F15400664859 /* XMLParser.swift */,
+				D33A23621C85F15400664859 /* XMLUtils.swift */,
+				D33A23631C85F15400664859 /* XMLWriter.swift */,
 			);
-			path = Sources;
-			sourceTree = SOURCE_ROOT;
+			path = SMGOLFramework;
+			sourceTree = "<group>";
+		};
+		D33A236A1C85F18C00664859 /* SMGOLFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D33A236B1C85F18C00664859 /* SMGOLFramework.h */,
+				D33A236D1C85F18C00664859 /* Info.plist */,
+			);
+			path = SMGOLFramework;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D33A23661C85F18C00664859 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A236C1C85F18C00664859 /* SMGOLFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXLegacyTarget section */
-		D3785E101C7AD58400717BD0 /* FFXIVServerBuild */ = {
+		D33A23891C85F1C000664859 /* FFXIVServer-SPM */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "";
-			buildConfigurationList = D3785E111C7AD58400717BD0 /* Build configuration list for PBXLegacyTarget "FFXIVServerBuild" */;
+			buildConfigurationList = D33A238A1C85F1C000664859 /* Build configuration list for PBXLegacyTarget "FFXIVServer-SPM" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swift-build";
-			buildWorkingDirectory = "";
+			buildWorkingDirectory = "$(SRCROOT)";
 			dependencies = (
 			);
-			name = FFXIVServerBuild;
+			name = "FFXIVServer-SPM";
 			passBuildSettingsInEnvironment = 1;
-			productName = FFXIVServerBuild;
+			productName = "FFXIVServer-SPM";
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		D3785E001C7AD23D00717BD0 /* FFXIVServer */ = {
+		D33A23361C85F13600664859 /* FFXIVServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3785E081C7AD23D00717BD0 /* Build configuration list for PBXNativeTarget "FFXIVServer" */;
+			buildConfigurationList = D33A233E1C85F13600664859 /* Build configuration list for PBXNativeTarget "FFXIVServer" */;
 			buildPhases = (
-				D3785DFD1C7AD23D00717BD0 /* Sources */,
-				D3785DFE1C7AD23D00717BD0 /* Frameworks */,
-				D3785DFF1C7AD23D00717BD0 /* CopyFiles */,
+				D33A23331C85F13600664859 /* Sources */,
+				D33A23341C85F13600664859 /* Frameworks */,
+				D33A23351C85F13600664859 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -124,67 +223,123 @@
 			);
 			name = FFXIVServer;
 			productName = FFXIVServer;
-			productReference = D3785E011C7AD23D00717BD0 /* FFXIVServer */;
+			productReference = D33A23371C85F13600664859 /* FFXIVServer */;
 			productType = "com.apple.product-type.tool";
+		};
+		D33A23681C85F18C00664859 /* SMGOLFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33A236E1C85F18C00664859 /* Build configuration list for PBXNativeTarget "SMGOLFramework" */;
+			buildPhases = (
+				D33A23641C85F18C00664859 /* Sources */,
+				D33A23651C85F18C00664859 /* Frameworks */,
+				D33A23661C85F18C00664859 /* Headers */,
+				D33A23671C85F18C00664859 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMGOLFramework;
+			productName = SMGOLFramework;
+			productReference = D33A23691C85F18C00664859 /* SMGOLFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D3785DF91C7AD23D00717BD0 /* Project object */ = {
+		D33A232F1C85F13600664859 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "David Green";
 				TargetAttributes = {
-					D3785E001C7AD23D00717BD0 = {
-						CreatedOnToolsVersion = 7.2.1;
+					D33A23361C85F13600664859 = {
+						CreatedOnToolsVersion = 7.3;
 					};
-					D3785E101C7AD58400717BD0 = {
-						CreatedOnToolsVersion = 7.2.1;
+					D33A23681C85F18C00664859 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D33A23891C85F1C000664859 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = D3785DFC1C7AD23D00717BD0 /* Build configuration list for PBXProject "FFXIVServer" */;
+			buildConfigurationList = D33A23321C85F13600664859 /* Build configuration list for PBXProject "FFXIVServer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D3785DF81C7AD23D00717BD0;
-			productRefGroup = D3785E021C7AD23D00717BD0 /* Products */;
+			mainGroup = D33A232E1C85F13600664859;
+			productRefGroup = D33A23381C85F13600664859 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3785E001C7AD23D00717BD0 /* FFXIVServer */,
-				D3785E101C7AD58400717BD0 /* FFXIVServerBuild */,
+				D33A23361C85F13600664859 /* FFXIVServer */,
+				D33A23681C85F18C00664859 /* SMGOLFramework */,
+				D33A23891C85F1C000664859 /* FFXIVServer-SPM */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D33A23671C85F18C00664859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		D3785DFD1C7AD23D00717BD0 /* Sources */ = {
+		D33A23331C85F13600664859 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A82DBD1C7E844500812C73 /* GlobalData.swift in Sources */,
-				D3A82DC51C7F55EE00812C73 /* Log.swift in Sources */,
-				D3A82DC11C7E852C00812C73 /* AppearanceDatabase.swift in Sources */,
-				D3D0C60B1C7B4ED0004A1B8F /* AppConfig.swift in Sources */,
-				D3A82DBF1C7E851500812C73 /* ZoneDatabase.swift in Sources */,
-				D3785E0D1C7AD43600717BD0 /* main.swift in Sources */,
-				D3A82DC31C7F52FD00812C73 /* LobbyServer.swift in Sources */,
+				D33A23821C85F1A100664859 /* GlobalData.swift in Sources */,
+				D33A23861C85F1A100664859 /* main.swift in Sources */,
+				D33A23841C85F1A100664859 /* LobbyServerPlayer.swift in Sources */,
+				D33A23851C85F1A100664859 /* Log.swift in Sources */,
+				D33A23881C85F1A100664859 /* ZoneDatabase.swift in Sources */,
+				D33A23811C85F1A100664859 /* AppearanceDatabase.swift in Sources */,
+				D33A23871C85F1A100664859 /* PacketUtils.swift in Sources */,
+				D33A23801C85F1A100664859 /* AppConfig.swift in Sources */,
+				D33A23831C85F1A100664859 /* LobbyServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33A23641C85F18C00664859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A23751C85F19C00664859 /* Socket.swift in Sources */,
+				D33A23721C85F19C00664859 /* Config.swift in Sources */,
+				D33A23781C85F19C00664859 /* StandardStreamUtils.swift in Sources */,
+				D33A237B1C85F19C00664859 /* XMLNode.swift in Sources */,
+				D33A23791C85F19C00664859 /* Stream.swift in Sources */,
+				D33A23771C85F19C00664859 /* StandardStream.swift in Sources */,
+				D33A237E1C85F19C00664859 /* XMLUtils.swift in Sources */,
+				D33A23761C85F19C00664859 /* SocketUtils.swift in Sources */,
+				D33A23731C85F19C00664859 /* MemStream.swift in Sources */,
+				D33A237D1C85F19C00664859 /* XMLParser.swift in Sources */,
+				D33A237F1C85F19C00664859 /* XMLWriter.swift in Sources */,
+				D33A237C1C85F19C00664859 /* XMLNodeFilter.swift in Sources */,
+				D33A237A1C85F19C00664859 /* Thread.swift in Sources */,
+				D33A23741C85F19C00664859 /* Mutex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D3785E061C7AD23D00717BD0 /* Debug */ = {
+		D33A233C1C85F13600664859 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -225,10 +380,11 @@
 			};
 			name = Debug;
 		};
-		D3785E071C7AD23D00717BD0 /* Release */ = {
+		D33A233D1C85F13600664859 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -261,33 +417,63 @@
 			};
 			name = Release;
 		};
-		D3785E091C7AD23D00717BD0 /* Debug */ = {
+		D33A233F1C85F13600664859 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Mobile",
-					"$(SRCROOT)/.build/debug",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
 			};
 			name = Debug;
 		};
-		D3785E0A1C7AD23D00717BD0 /* Release */ = {
+		D33A23401C85F13600664859 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Mobile",
-					"$(SRCROOT)/.build/release",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/release";
 			};
 			name = Release;
 		};
-		D3785E121C7AD58400717BD0 /* Debug */ = {
+		D33A236F1C85F18C00664859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SMGOLFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.davidtgreen.SMGOLFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D33A23701C85F18C00664859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SMGOLFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.davidtgreen.SMGOLFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D33A238B1C85F1C000664859 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUGGING_SYMBOLS = YES;
@@ -300,7 +486,7 @@
 			};
 			name = Debug;
 		};
-		D3785E131C7AD58400717BD0 /* Release */ = {
+		D33A238C1C85F1C000664859 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -313,34 +499,41 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3785DFC1C7AD23D00717BD0 /* Build configuration list for PBXProject "FFXIVServer" */ = {
+		D33A23321C85F13600664859 /* Build configuration list for PBXProject "FFXIVServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3785E061C7AD23D00717BD0 /* Debug */,
-				D3785E071C7AD23D00717BD0 /* Release */,
+				D33A233C1C85F13600664859 /* Debug */,
+				D33A233D1C85F13600664859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3785E081C7AD23D00717BD0 /* Build configuration list for PBXNativeTarget "FFXIVServer" */ = {
+		D33A233E1C85F13600664859 /* Build configuration list for PBXNativeTarget "FFXIVServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3785E091C7AD23D00717BD0 /* Debug */,
-				D3785E0A1C7AD23D00717BD0 /* Release */,
+				D33A233F1C85F13600664859 /* Debug */,
+				D33A23401C85F13600664859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3785E111C7AD58400717BD0 /* Build configuration list for PBXLegacyTarget "FFXIVServerBuild" */ = {
+		D33A236E1C85F18C00664859 /* Build configuration list for PBXNativeTarget "SMGOLFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3785E121C7AD58400717BD0 /* Debug */,
-				D3785E131C7AD58400717BD0 /* Release */,
+				D33A236F1C85F18C00664859 /* Debug */,
+				D33A23701C85F18C00664859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		D33A238A1C85F1C000664859 /* Build configuration list for PBXLegacyTarget "FFXIVServer-SPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33A238B1C85F1C000664859 /* Debug */,
+				D33A238C1C85F1C000664859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D3785DF91C7AD23D00717BD0 /* Project object */;
+	rootObject = D33A232F1C85F13600664859 /* Project object */;
 }
